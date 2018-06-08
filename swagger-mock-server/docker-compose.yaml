@@ -1,0 +1,9 @@
+version: "3"
+services:
+  swagger-mock-server:
+    image: "palo/swagger-api-mock"
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./swagger.yaml:/data/swagger.yaml"
+
